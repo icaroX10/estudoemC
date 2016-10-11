@@ -17,6 +17,18 @@ void calcV(){
 		printf("%d\n",*(point+i));
 	}
 }
+void strutdat(){
+	struct data{
+		int dia,mes,ano;
+	}hoje,*ontem;
+	ontem = &hoje;
+	
+	(*ontem).dia = 11;
+	ontem->mes = 10; //pode ser assim tbm
+	(*ontem).ano = 2016;
+	
+	printf("%d/%d/%d", hoje.dia,hoje.mes,hoje.ano);
+}
 main(){
-	calcV();
+	strutdat();
 }

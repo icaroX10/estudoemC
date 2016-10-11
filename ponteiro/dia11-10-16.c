@@ -38,6 +38,19 @@ void atribuir(){
 	//ou int *pX=&x;
 	return 0;
 }
+void entM(){
+	int x = 10;
+	double a= 12.3;
+	char z = 'b';
+	
+	int *pX= &x;
+	double *pA= &a;
+	char *pZ= &z;
+	
+	printf("Endereço de x: %d - Valor de x: %d\n",pX,*pX);
+	printf("Endereço de a: %d - Valor de a: %lf\n",pA,*pA);
+	printf("Endereço de z: %d - Valor de z: %c\n",pZ,*pZ);
+}
 main(){
-	test2();
+	entM();
 }

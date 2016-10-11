@@ -51,6 +51,33 @@ void entM(){
 	printf("Endereço de a: %d - Valor de a: %lf\n",pA,*pA);
 	printf("Endereço de z: %d - Valor de z: %c\n",pZ,*pZ);
 }
+void decrementando(){
+	int x=10;
+	int *intpoint = &x;
+	
+	printf("\n %d \n", intpoint);
+	intpoint--;
+	printf("\n %d \n", intpoint);
+	return;
+}
+void vezes(){
+	int x=10;
+	int *intpoint = &x;
+	
+	printf("\n %d \n", intpoint);
+	intpoint = intpoint +4;
+	printf("\n %d \n", intpoint);
+	return;
+}
+void vetore(){
+	char vetor[20] = "Teste de String";
+	
+	char *point;
+	
+	point = &vetor[6];
+	printf("\n %d \n", *point);
+	return;
+}
 main(){
-	entM();
+	vetore();
 }

@@ -31,6 +31,13 @@ void test2(){
 	printf("Valor do X = %d\nValor do Y = %d\nValor do ponteiro = %d\n",x,y,ponteiro);
 	return 0;
 }
+void atribuir(){
+	int x=10;
+	int *pX;
+	pX = &x;
+	//ou int *pX=&x;
+	return 0;
+}
 main(){
 	test2();
 }

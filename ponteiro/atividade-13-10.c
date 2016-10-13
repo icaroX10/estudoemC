@@ -29,9 +29,14 @@ int troca(int a,int b){
 }
 //4 - Crie um programa que contenha um array de inteiros contendo 5 elementos. Utilizando apenas aritmética de ponteiros, 
 //leia esse array do teclado e imprima o dobro de cada valor lido.
-
+int dobroV(){
+    int a[5]={1,5,6,7,8},*pa,i;
+    pa = a;
+    for(i=0;i<5;i++)printf("%d\n",*(pa+i)*2);
+}
 int main(){
     troca(20,30);
+    dobroV();
     system("pause");
     return 0;    
 }
